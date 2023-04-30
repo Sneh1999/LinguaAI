@@ -19,7 +19,10 @@ const basePromptPrefix =
 
 export default async function generateText(text: string, tone: TONE) {
   try {
-    const model = new OpenAI({ temperature: 0.9 });
+    const model = new OpenAI({
+      temperature: 0.9,
+      openAIApiKey: process.env.OPEN_API_KEY,
+    });
     const prompt = new PromptTemplate({
       template: basePromptPrefix,
       inputVariables: ["tone", "text"],

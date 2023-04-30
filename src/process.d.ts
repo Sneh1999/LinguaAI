@@ -3,5 +3,6 @@ declare namespace NodeJS {
     DISCORD_BOT_TOKEN: string;
     CLIENT_ID: string;
     GUILD_ID: string;
+    OPEN_API_KEY: string;
   }
 }
