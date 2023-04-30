@@ -1,4 +1,4 @@
-import { Interaction, SlashCommandBuilder } from "discord.js";
+import { SlashCommandBuilder } from "discord.js";
 import generateText from "../generateText";
 
 const data = new SlashCommandBuilder()
@@ -16,7 +16,13 @@ const data = new SlashCommandBuilder()
         { name: "INFORMAL", value: "informal" },
         { name: "OPTIMISTIC", value: "optimistic" },
         { name: "WORRIED", value: "worried" },
-        { name: "FRIENDLY", value: "friendly" }
+        { name: "FRIENDLY", value: "friendly" },
+        { name: "CURIOUS", value: "curious" },
+        { name: "ASSERTIVE", value: "assertive" },
+        { name: "ENCOURAGING", value: "encouraging" },
+        { name: "ENCOURAGING", value: "encouraging" },
+        { name: "SUPRISED", value: "suprised" },
+        { name: "COOPERATIVE", value: "cooperative" }
       )
   )
   .addStringOption((option) =>

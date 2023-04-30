@@ -1,6 +1,6 @@
 import { Client, Events, GatewayIntentBits } from "discord.js";
 import dotenv from "dotenv";
-import * as pingCommand from "./commands/ping";
+import * as linguaCommand from "./commands/lingua";
 
 dotenv.config();
 
@@ -15,12 +15,12 @@ client.login(token);
 // execute the command
 client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
-  if (interaction.commandName !== "ping") {
+  if (interaction.commandName !== "lingua") {
     console.error("Unknown command");
   }
 
   try {
-    await pingCommand.execute(interaction);
+    await linguaCommand.execute(interaction);
   } catch (error: any) {
     console.error(error);
     if (interaction.replied || interaction.deferred) {

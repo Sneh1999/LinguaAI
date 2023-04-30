@@ -1,7 +1,7 @@
-import * as pingCommand from "./commands/ping";
+import * as linguaCommand from "./commands/lingua";
 
 export const commandsList = () => {
   const commands = [];
-  commands.push(pingCommand.data.toJSON());
+  commands.push(linguaCommand.data.toJSON());
   return commands;
 };
